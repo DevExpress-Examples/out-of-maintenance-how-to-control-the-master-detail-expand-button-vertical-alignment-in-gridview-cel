@@ -1,3 +1,14 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [MyGridControl.cs](./CS/CustomGridWinApp1/CustomGridControl/MyGridControl.cs) (VB: [MyGridControl.vb](./VB/CustomGridWinApp1/CustomGridControl/MyGridControl.vb))
+* [MyGridView.cs](./CS/CustomGridWinApp1/CustomGridControl/MyGridView.cs) (VB: [MyGridView.vb](./VB/CustomGridWinApp1/CustomGridControl/MyGridView.vb))
+* [MyGridViewInfo.cs](./CS/CustomGridWinApp1/CustomGridControl/MyGridViewInfo.cs) (VB: [MyGridViewInfoRegistrator.vb](./VB/CustomGridWinApp1/CustomGridControl/MyGridViewInfoRegistrator.vb))
+* [MyGridViewInfoRegistrator.cs](./CS/CustomGridWinApp1/CustomGridControl/MyGridViewInfoRegistrator.cs) (VB: [MyGridViewInfoRegistrator.vb](./VB/CustomGridWinApp1/CustomGridControl/MyGridViewInfoRegistrator.vb))
+* [MyOptionsView.cs](./CS/CustomGridWinApp1/CustomGridControl/MyOptionsView.cs) (VB: [MyOptionsView.vb](./VB/CustomGridWinApp1/CustomGridControl/MyOptionsView.vb))
+* [Form1.cs](./CS/CustomGridWinApp1/Form1.cs) (VB: [Form1.vb](./VB/CustomGridWinApp1/Form1.vb))
+* [Program.cs](./CS/CustomGridWinApp1/Program.cs) (VB: [Program.vb](./VB/CustomGridWinApp1/Program.vb))
+<!-- default file list end -->
 # How to control the master-detail expand button vertical alignment in GridView cells
 
 
