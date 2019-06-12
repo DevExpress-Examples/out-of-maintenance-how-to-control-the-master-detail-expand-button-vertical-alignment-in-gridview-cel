@@ -17,26 +17,26 @@ namespace CustomGridControl
 		{
             GridCellInfo result;
             result = base.CalcRowCellDrawInfoCore(ri, ci, cell, nextColumn, calcEditInfo, nextRow, allowCache);
-			if (cell.CellButtonRect == Rectangle.Empty )
-				return cell;
+			if (result.CellButtonRect == Rectangle.Empty )
+				return result;
 
 			MyGridView view = View as MyGridView;
 			if ( view == null )
-				return cell;
+				return result;
             
 
 			if ( view.OptionsView.DetailButtonsVAlignment == VertAlignment.Top )
 			{
-				cell.CellButtonRect.Y = cell.CellValueRect.Y + CellVertIndent + CellValueVIndent;
-				return cell;
+				result.CellButtonRect.Y = result.CellValueRect.Y + CellVertIndent + CellValueVIndent;
+				return result;
 			}
 
 			if ( view.OptionsView.DetailButtonsVAlignment == VertAlignment.Bottom )
 			{
-				cell.CellButtonRect.Y = cell.CellValueRect.Bottom - cell.CellButtonRect.Height - CellVertIndent - CellValueVIndent;
-				return cell;
+				result.CellButtonRect.Y = result.CellValueRect.Bottom - result.CellButtonRect.Height - CellVertIndent - CellValueVIndent;
+				return result;
 			}
-            return cell;
+            return result;
 		}
 	}
 }
