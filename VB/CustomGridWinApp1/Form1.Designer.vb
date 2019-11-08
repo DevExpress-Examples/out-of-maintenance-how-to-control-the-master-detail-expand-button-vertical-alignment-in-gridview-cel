@@ -33,8 +33,8 @@
 			Me.colShipCountry = New DevExpress.XtraGrid.Columns.GridColumn()
 			Me.myGridControl1 = New CustomGridControl.MyGridControl()
 			Me.employeesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-			Me.nwindDataSet = New CustomGridWinApp1.nwindDataSet()
-			Me.myGridView1 = New CustomGridControl.MyGridView()
+            Me.nwindDataSet = New nwindDataSet()
+            Me.myGridView1 = New CustomGridControl.MyGridView()
 			Me.colLastName = New DevExpress.XtraGrid.Columns.GridColumn()
 			Me.colFirstName = New DevExpress.XtraGrid.Columns.GridColumn()
 			Me.colBirthDate = New DevExpress.XtraGrid.Columns.GridColumn()
@@ -43,10 +43,10 @@
 			Me.repositoryItemPictureEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit()
 			Me.colNotes = New DevExpress.XtraGrid.Columns.GridColumn()
 			Me.repositoryItemMemoEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit()
-			Me.employeesTableAdapter = New CustomGridWinApp1.nwindDataSetTableAdapters.EmployeesTableAdapter()
-			Me.ordersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-			Me.ordersTableAdapter = New CustomGridWinApp1.nwindDataSetTableAdapters.OrdersTableAdapter()
-			DirectCast(Me.myGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
+            Me.employeesTableAdapter = New nwindDataSetTableAdapters.EmployeesTableAdapter()
+            Me.ordersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+            Me.ordersTableAdapter = New nwindDataSetTableAdapters.OrdersTableAdapter()
+            DirectCast(Me.myGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
 			DirectCast(Me.myGridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
 			DirectCast(Me.employeesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
 			DirectCast(Me.nwindDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -233,16 +233,16 @@
 		Private myGridView1 As CustomGridControl.MyGridView
 		Private nwindDataSet As nwindDataSet
 		Private employeesBindingSource As System.Windows.Forms.BindingSource
-		Private employeesTableAdapter As CustomGridWinApp1.nwindDataSetTableAdapters.EmployeesTableAdapter
-		Private colLastName As DevExpress.XtraGrid.Columns.GridColumn
+        Private employeesTableAdapter As nwindDataSetTableAdapters.EmployeesTableAdapter
+        Private colLastName As DevExpress.XtraGrid.Columns.GridColumn
 		Private colFirstName As DevExpress.XtraGrid.Columns.GridColumn
 		Private colBirthDate As DevExpress.XtraGrid.Columns.GridColumn
 		Private colCountry As DevExpress.XtraGrid.Columns.GridColumn
 		Private colPhoto As DevExpress.XtraGrid.Columns.GridColumn
 		Private colNotes As DevExpress.XtraGrid.Columns.GridColumn
 		Private ordersBindingSource As System.Windows.Forms.BindingSource
-		Private ordersTableAdapter As CustomGridWinApp1.nwindDataSetTableAdapters.OrdersTableAdapter
-		Private myGridView2 As CustomGridControl.MyGridView
+        Private ordersTableAdapter As nwindDataSetTableAdapters.OrdersTableAdapter
+        Private myGridView2 As CustomGridControl.MyGridView
 		Private colOrderID As DevExpress.XtraGrid.Columns.GridColumn
 		Private colOrderDate As DevExpress.XtraGrid.Columns.GridColumn
 		Private colShippedDate As DevExpress.XtraGrid.Columns.GridColumn

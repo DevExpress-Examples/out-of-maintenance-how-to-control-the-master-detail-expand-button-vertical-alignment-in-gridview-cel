@@ -12,12 +12,12 @@ Namespace CustomGridControl
 			MyBase.New(gridView)
 		End Sub
 
-		Protected Overrides Function CalcRowCellDrawInfoCore(ByVal ri As GridDataRowInfo, ByVal ci As GridColumnInfoArgs, ByVal cell As GridCellInfo, ByVal nextColumn As GridColumnInfoArgs, ByVal calcEditInfo As Boolean, ByVal nextRow As GridRow, ByVal allowCache As Boolean) As GridCellInfo
-			Dim result As GridCellInfo
-			result = MyBase.CalcRowCellDrawInfoCore(ri, ci, cell, nextColumn, calcEditInfo, nextRow, allowCache)
-			If result.CellButtonRect = Rectangle.Empty Then
-				Return result
-			End If
+        Protected Overrides Function CalcRowCellDrawInfoCore(ByVal ri As GridDataRowInfo, ByVal ci As GridColumnInfoArgs, ByVal cell As GridCellInfo, ByVal nextColumn As GridColumnInfoArgs, ByVal calcEditInfo As Boolean, ByVal nextRow As GridRow, ByVal allowCache As Boolean, ByVal cellBounds As Rectangle) As GridCellInfo
+            Dim result As GridCellInfo
+            result = MyBase.CalcRowCellDrawInfoCore(ri, ci, cell, nextColumn, calcEditInfo, nextRow, allowCache, cellBounds)
+            If result.CellButtonRect = Rectangle.Empty Then
+                Return result
+            End If
 
             Dim aView As MyGridView = TryCast(View, MyGridView)
             If aView Is Nothing Then
@@ -35,6 +35,6 @@ Namespace CustomGridControl
                 Return result
             End If
             Return result
-		End Function
-	End Class
+        End Function
+    End Class
 End Namespace

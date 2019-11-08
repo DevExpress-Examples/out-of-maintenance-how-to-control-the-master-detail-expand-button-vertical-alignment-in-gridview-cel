@@ -13,10 +13,10 @@ namespace CustomGridControl
 		{
 		}
 
-        protected override GridCellInfo CalcRowCellDrawInfoCore(GridDataRowInfo ri, GridColumnInfoArgs ci, GridCellInfo cell, GridColumnInfoArgs nextColumn, bool calcEditInfo, GridRow nextRow, bool allowCache)
+        protected override GridCellInfo CalcRowCellDrawInfoCore(GridDataRowInfo ri, GridColumnInfoArgs ci, GridCellInfo cell, GridColumnInfoArgs nextColumn, bool calcEditInfo, GridRow nextRow, bool allowCache, Rectangle cellBounds)
 		{
             GridCellInfo result;
-            result = base.CalcRowCellDrawInfoCore(ri, ci, cell, nextColumn, calcEditInfo, nextRow, allowCache);
+            result = base.CalcRowCellDrawInfoCore(ri, ci, cell, nextColumn, calcEditInfo, nextRow, allowCache, cellBounds);
 			if (result.CellButtonRect == Rectangle.Empty )
 				return result;
 
